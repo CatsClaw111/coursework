@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+  /* Рекламный блок */
+.intro {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+  /* Блок с особенностями приложения */
+.features {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.features h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.features ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.features li {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features li:hover {
+    background-color: #e1f7d5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.features li strong {
+    font-size: 1.2rem;
+}
+
+  /* Блок с отзывами */
+.testimonials {
+    padding: 50px 0;
+    background-color: #e9f7fd;
+}
+
+.testimonials h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.testimonials .testimonial {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonials .testimonial p {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.testimonials .testimonial p:last-child {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+  /* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    .features ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonials .testimonial {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    .features ul {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials .testimonial {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
