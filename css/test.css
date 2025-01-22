@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #202020;
+    color: white;
 }
 
 body {
@@ -29,7 +31,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .icon-group {
@@ -39,15 +40,47 @@ body {
 }
 
 .icon-switch {
-    width: fit-content;
-    padding: 15px;
-    border-radius: 20px;
-    transition: background-color 0.3s;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.5s;
+    position: relative;
+}
+
+.icon-switch img {
+    transform: translateY(2px);
 }
 
 .icon-switch:hover {
     background-color: #4CAF50;
+
 }
+.icon-switch:hover .hint {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.hint {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+    left: 80%; 
+    top: 100%; 
+    transform: translateY(-50%);
+    z-index: 1000;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
 /* !------------------------------------------------------------------------------------------------------- */
 .calendar {
     width: 100%;
@@ -88,13 +121,13 @@ body {
 .days-of-week {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     font-weight: bold;
     text-align: center;
     padding: 10px;
 }
 
-.day {
+.day-form {
     padding: 10px;
 }
 
@@ -108,24 +141,24 @@ body {
     height: calc(100% - 80px); /* Общая высота календаря */
 }
 
-.day-number,
+.day,
 .empty-day {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: 120px; /* Одинаковая высота для всех ячеек */
     padding-top: 10px;
     border-radius: 8px;
     transition: background-color 0.3s;
     cursor: pointer;
-
 }
 
-.day-number:hover {
+.day:hover {
     background-color: #4CAF50;
 }
 
 .empty-day {
-    background-color: #f9f9f9;
+    background-color: #5e5e5e;;
 }
 
 .tasks {
@@ -134,7 +167,8 @@ body {
 }
 /* !------------------------------------------------------------------------------------------------------- */
 .further-plans {
-    width: 25rem;
+    width: 35rem;
     height: 100%;
-    background-color: black;
+    background-color: ;
 }
+
