@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="../css/account.css">
+</head>
+<body>
+    <!-- Кнопка для вызова панели -->
+    <button class="toggle-menu">☰</button>
+
+    <div class="container">
+        <!-- Левое меню -->
+        <header class="sidebar">
+            <div class="menu-content">
+                <h2>Личный кабинет</h2>
+                <button class="create-button">Добавить новый аккаунт</button>
+                <ul class="menu-list">
+                    <h2></h2>
+                    <div class="account-buttons">
+                        <button class="account-button active">Алексей</button>
+                        <button class="account-button">Иван</button>
+                        <button class="account-button">Ольга</button>
+                    </div>
+                </ul>
+                <div class="icons">
+                    <a href="main_page.html">
+                        <img src="../images/calendar.png" alt="Календарь">
+                        <div class="hint">Календарь</div>
+                    </a>
+                    <a href="account.html">
+                        <img src="../images/account.png" alt="">
+                        <div class="hint">Личный кабинет</div>
+                    </a>
+                    <a href="account.html">
+                        <img src="../images/settings.png" alt="">
+                        <div class="hint">Настройки</div>
+                    </a>
+
+                </div>
+            </div>
+            <footer class="menu-footer">
+                <p>Условия - Конфиденциальность</p>
+            </footer>
+        </header>
+
+        <!-- Основной контент -->
+        <main class="main-content">
+            <div class="top-bar">
+                <div class="proxi">
+                    <h1>Личный кабинет</h1>
+                </div>
+            </div>
+            <div class="account-content">
+                <h3>Информация о пользователе</h3>
+                <div class="account-details">
+                    <p><strong>Имя:</strong> Алексей</p>
+                    <p><strong>Почта:</strong> alexey@admin.ru</p>
+                    <p><strong>Роль:</strong> Администратор</p>
+                </div>
+            </div>
+            <div class="account-summary">
+                <h3>Обзор аккаунта</h3>
+                <div class="stat-card">
+                    <h4>Активные задачи</h4>
+                    <p>У вас 3 активные задачи на сегодня.</p>
+                    <button class="view-button">Посмотреть задачи</button>
+                </div>
+                <div class="stat-card">
+                    <h4>Достижения</h4>
+                    <p>Вы завершили 5 задач за последнюю неделю!</p>
+                    <button class="view-button">Посмотреть достижения</button>
+                </div>
+                <div class="stat-card">
+                    <h4>Статистика</h4>
+                    <p>Вы работаете с 10:00, всего 5 часов.</p>
+                    <button class="view-button">Посмотреть статистику</button>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* Стили для всей страницы */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #202124;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Контейнер для формы */
+.registration-container {
+    background-color: #303134;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+/* Стиль контейнера формы */
+.form-container {
+    width: 100%;
+}
+
+/* Заголовок формы */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Группы полей */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Лейблы */
+.input-group label {
+    font-size: 14px;
+    color: #ddd;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Поля ввода */
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #5f6368;
+    background-color: #202124;
+    color: #fff;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+/* Кнопка отправки */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #155a8a;
+}
+
+/* Ссылка для перехода */
+.redirect {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redirect a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.redirect a:hover {
+    text-decoration: underline;
+}
+
+/* Плавная анимация для полей */
+input:focus ~ label,
+input:valid ~ label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #1a73e8;
+}
+
+/* Анимация при фокусе на поле */
+.input-group {
+    position: relative;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #5f6368;
+    transition: 0.3s ease;
+}
+
+/* Стилизация для пустого поля */
+input:focus {
+    border-color: #1a73e8;
+}
+
+/* Мобильная адаптивность */
+@media (max-width: 600px) {
+    .registration-container {
+        width: 90%;
+    }
+}
