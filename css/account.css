@@ -47,6 +47,20 @@ body {
     z-index: 2;
 }
 
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: 100;
+}
+
+.site-name {
+    position: absolute;
+    top: 3px;
+    left: 90px;
+    z-index: 100;
+}
+
 .menu-content {
     margin-top: 30px;
     padding: 20px;
