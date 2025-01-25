@@ -424,6 +424,10 @@ body {
         padding: 10px 20px;
     }
 
+    .buttons {
+        margin-left: 130px;
+    }
+
     /* Кнопки в верхней панели */
     .top-bar .buttons button {
         background-color: #1a73e8;
