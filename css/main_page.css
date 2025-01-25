@@ -198,12 +198,12 @@ body {
 
 .calendar {
     display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 7 столбцов для дней недели */
-    grid-auto-rows: 1fr; /* Автоматическое выравнивание строк */
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 1fr;
     grid-gap: 10px;
     padding: 20px;
-    height: 100%; /* Календарь занимает всю высоту контейнера */
-    box-sizing: border-box; /* Учитываем отступы */
+    height: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -358,7 +358,7 @@ body {
 
     /* Календарь */
     .calendar {
-        grid-template-columns: repeat(5, 1fr); /* 5 колонок для мобильной версии */
+        grid-template-columns: repeat(5, 1fr);
     }
 
     .weekdays div, .days div {
@@ -442,7 +442,7 @@ body {
         transform: translateY(-3px);
     }
 
-    /* Стилизуем кнопки стрелок */
+    /* Стилизация кнопки стрелок */
     .top-bar .buttons button:first-child, .top-bar .buttons button:last-child {
         padding: 8px 12px;
         font-size: 18px;
@@ -463,7 +463,7 @@ body {
 
     /* Календарь */
     .calendar {
-        grid-template-columns: repeat(6, 1fr); /* 6 колонок для планшетов */
+        grid-template-columns: repeat(6, 1fr);
     }
 
     .weekdays div, .days div {
